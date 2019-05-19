@@ -15,5 +15,5 @@ sudo npm install -g typescript
 Useful pages:
 
 [json format - online](https://jsoneditoronline.org/)
-
+[http://json2ts.com/](http://json2ts.com/)
 
