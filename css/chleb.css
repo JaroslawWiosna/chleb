@@ -47,6 +47,10 @@ body {
     border: 2px dashed;
     padding: 5px;
     margin-top: 5px;
+
+    ol {
+    font-family: Arial, Helvetica, sans-serif;
+    }
 }
 
 

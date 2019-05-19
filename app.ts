@@ -55,8 +55,11 @@ let user = "CHLIEB User. Footnote";
 //console.log(word);
 
 
-let div = document.createElement('div');
+let cont = require('./json/data.json');
+
 div.textContent = "Dynamically created footer";
+div.textContent = cont
 div.setAttribute('class', 'baking');
 document.body.appendChild(div);
+
 
