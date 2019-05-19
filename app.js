@@ -7,6 +7,7 @@ var user = "CHLIEB User. Footnote";
 //let myHeading = document.querySelector('h6');
 //myHeading.textContent = 'foot!';
 var elem = document.createElement('div');
+new html.Div("DIVDIV");
 //import data from './json/data.json';
 //const word = (<any>data).test;
 //console.log(word);

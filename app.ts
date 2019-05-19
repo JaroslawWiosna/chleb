@@ -48,8 +48,6 @@ let user = "CHLIEB User. Footnote";
 
 var elem = document.createElement('div');
 
-
-
 //import data from './json/data.json';
 
 //const word = (<any>data).test;
