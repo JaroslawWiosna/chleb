@@ -1,0 +1,39 @@
+{
+  "test": "test",
+  "recipes": [
+    {
+      "name": "Original recipe",
+      "date": "2019-05-17 18:00",
+      "ingredients": [
+        {
+          "water": "400 g",
+          "salt": "12 g",
+          "flour": "500 g"
+        }
+      ]
+    },
+    {
+      "name": "Iteration 1",
+      "date": "2019-05-18 16:00",
+      "ingredients": [
+        {
+          "water": "400 g",
+          "salt": "12 g",
+          "flour": "550 g"
+        }
+      ]
+    }
+  ],
+  "boolean": true,
+  "color": "#b1b1b1",
+  "null": null,
+  "number": 123,
+  "f": "f",
+  "bakings": {
+    "aa": "00",
+    "a": "b",
+    "c": "d",
+    "e": "f"
+  },
+  "string": "Hello World"
+}
