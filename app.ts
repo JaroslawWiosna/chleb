@@ -46,11 +46,17 @@ let user = "CHLIEB User. Footnote";
 //let myHeading = document.querySelector('h6');
 //myHeading.textContent = 'foot!';
 
-var elem = document.createElement('div');
+//var elem = document.createElement('div');
 
 //import data from './json/data.json';
 
 //const word = (<any>data).test;
 
 //console.log(word);
+
+
+let div = document.createElement('div');
+div.textContent = "Dynamically created footer";
+div.setAttribute('class', 'baking');
+document.body.appendChild(div);
 
