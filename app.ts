@@ -39,9 +39,16 @@ function greeter(person) {
     return "Hello, " + person;
 }
 
-let user = "CHLIEB User";
+let user = "CHLIEB User. Footnote";
 
-document.body.innerHTML = greeter(user);
+//document.body.innerHTML = greeter(user);
+
+//let myHeading = document.querySelector('h6');
+//myHeading.textContent = 'foot!';
+
+var elem = document.createElement('div');
+
+
 
 //import data from './json/data.json';
 
