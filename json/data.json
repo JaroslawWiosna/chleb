@@ -54,10 +54,14 @@
       }
     },
     {
-      "date": "2019-12-17 12:12",
+      "date": "2019-12-21 13:04",
       "tasty" : "yes",
       "logs": {
-        "2019-12-17 17:04" : "Zakwas wyjety z lodówki"
+        "2019-12-21 13:04" : "Zakwas wyjety z lodówki",
+        "2019-12-21 14:02" : "Zakwas dokarmiony",
+        "2019-12-21 14:03" : "Zakwas schowany do lodówki",
+        "2019-12-21 14:11" : "Ciasto włożone do brytfanny",
+        "2019-12-21 " : " "
       }
     }
   ],

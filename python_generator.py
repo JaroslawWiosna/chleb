@@ -20,7 +20,7 @@ def print_recipe_as_table(recipe):
     s += "</div>"
 
     s += "<div class=\"ingredients\">"
-    s += "<table>"
+    s += "<table class=\"mytable\">"
     s += "<tr>"
     s += "<td>"
 
@@ -28,15 +28,6 @@ def print_recipe_as_table(recipe):
     s += "<br />"
     s += "woda " 
     s += recipe['ingredients']['woda']
-    s += "<br />"
-
-    s += "</td>"
-    s += "<td>"
-
-    s += "<img src=\"img/sourdough.png\"></img>"
-    s += "<br />"
-    s += "zakwas " 
-    s += recipe['ingredients']['zakwas']
     s += "<br />"
 
     s += "</td>"
@@ -199,11 +190,13 @@ def print_html_head():
 def print_html_body():
     s = ""
     s += "<body>"
-    s += "<div class=\"header\">"
+    s += "<div class=\"myheader\">"
     s += "<h1>"
     s += "        Chleb "
     s += "    </h1>"
+    s += "<h3>"
     s += u"    Jak zrobić chleb w domu?"
+    s += "</h3>"
     s += "</div>"
     s += print_recipes()
     s += print_bakings()

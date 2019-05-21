@@ -14,15 +14,21 @@ body {
 // 806A3B
 // CCB585
 
-.header {
+.myheader {
 
     background-color: #BF9237;
     color: #423213;
     text-align: center;
 
     h1 {
-        font-size: 30px;
+        font-size: 70px;
         text-align: center;
+        font-family: Comic Sans;
+    }
+    h3 {
+        font-size: 50px;
+        text-align: left;
+        font-family: Comic Sans;
     }
 }
 
@@ -68,16 +74,10 @@ body {
         color: #ffffff;
 }
 
-.recipe .ingedriends table {
-        font-size: 8px;
-        text-align: right;
+.mytable td {
+        font-size: 6px;
         font-family: Courier, Monaco, monospace;
         color: #000000;
-}
-
-.recipe .ingedriends table td{
-        font-size: 8px;
-        color: #ffffff;
 }
 
 
