@@ -2,26 +2,31 @@
   "test": "test",
   "recipes": [
     {
-      "name": "Original recipe",
+      "id": 1,
+      "name": "Przepis oryginalny",
       "date": "2019-05-17 18:00",
-      "ingredients": [
+      "ingredients": 
         {
-          "water": "400 g",
-          "salt": "12 g",
-          "flour": "500 g"
+          "woda": "400 g",
+          "sol": "12 g",
+          "maka_pszenna": "500 g",
+          "zakwas": "100 g"
         }
-      ]
+     
     },
     {
-      "name": "Iteration 1",
+      "id": 2,
+      "name": "Iteracja #1",
       "date": "2019-05-18 16:00",
-      "ingredients": [
+      "ingredients": 
         {
-          "water": "400 g",
-          "salt": "12 g",
-          "flour": "550 g"
+          "woda": "400 g",
+          "sol": "12 g",
+          "maka_pszenna": "275 g",
+          "maka_zytnia": "275 g",
+          "zakwas": "100 g"
         }
-      ]
+      
     }
   ],
   "boolean": true,
@@ -29,11 +34,32 @@
   "null": null,
   "number": 123,
   "f": "f",
-  "bakings": {
-    "aa": "00",
-    "a": "b",
-    "c": "d",
-    "e": "f"
-  },
+  "bakings": [
+    {
+      "date": "2019-05-17 18:00",
+      "tasty" : "yes",
+      "logs": {
+        "2019-05-18 17:04" : "Zakwas wyjety z lodowki",
+        "2019-05-18 19:04" : "Dokarmienie",
+        "2019-05-18 19:22" : "Przeniesienie ciasta do brytfanny",
+        "2019-05-19 04:20" : "Zaczynamy rozgzrzewanie pieca gazowego. na 5",
+        "2019-05-19 04:37" : "Brytfanna do piecyka. na 4",
+        "2019-05-19 04:44" : "na 3.",
+        "2019-05-19 05:00" : "na 2.",
+        "2019-05-19 05:01" : "przesuniecie brytfanny blizej drzwi",
+        "2019-05-19 05:02" : "na 1",
+        "2019-05-19 05:17" : "wyciagniecie i popukanie w spod.",
+        "2019-05-19 05:18" : "wylaczenie pieca. zostawienie brytfanny w piecu. drzwiczki otwarte",
+        "2019-05-19 07:17" : "Degustacja"
+      }
+    },
+    {
+      "date": "2019-12-17 12:12",
+      "tasty" : "yes",
+      "logs": {
+        "2019-12-17 17:04" : "Zakwas wyjety z lodówki"
+      }
+    }
+  ],
   "string": "Hello World"
 }
