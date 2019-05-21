@@ -81,6 +81,17 @@ body {
 }
 
 
+.ingredients_table{
+        display:table;
+        width:100%;
+        table-layout:fixed;
+}
+
+.ingredients_table_cell{
+        display:table-cell;
+        width:100px;
+}
+
 
 .baking {
 

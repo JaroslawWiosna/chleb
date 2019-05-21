@@ -20,44 +20,46 @@ def print_recipe_as_table(recipe):
     s += "</div>"
 
     s += "<div class=\"ingredients\">"
-    s += "<table class=\"mytable\">"
-    s += "<tr>"
-    s += "<td>"
 
+    s += "<div class=\"ingredients_table\">"
+    s += "<div class=\"ingredients_table_cell\">"
     s += "<img src=\"img/water.png\"></img>"
     s += "<br />"
     s += "woda " 
     s += recipe['ingredients']['woda']
     s += "<br />"
+    s += "</div>"
 
-    s += "</td>"
-    s += "<td>"
-
+    s += "<div class=\"ingredients_table_cell\">"
     s += "<img src=\"img/sourdough.png\"></img>"
     s += "<br />"
     s += "zakwas " 
     s += recipe['ingredients']['zakwas']
     s += "<br />"
 
-    s += "</td>"
-    s += "<td>"
+
+
+    s += "</div>"
+
     if 'maka_zytnia' in recipe['ingredients']:
+        s += "<div class=\"ingredients_table_cell\">"
         s += "<img src=\"img/flour_whole_wheat.png\"></img>"
         s += "<br />"
         s += u'mąka żytnia '
         s += recipe['ingredients']['maka_zytnia']
         s += "<br />"
+        s += "</div>"
 
-    s += "</td>"
-    s += "<td>"
+    s += "<div class=\"ingredients_table_cell\">"
     s += "<img src=\"img/flour_plain.png\"></img>"
     s += "<br />"
     s += u"mąka pszenna " 
     s += recipe['ingredients']['maka_pszenna']
     s += "<br />"
-            
-    s += "</tr>"
-    s += "</table>"
+    s += "</div>"
+
+
+    s += "</div>"
     s += "</div>"
     s += "</div>"
     return s
@@ -93,47 +95,6 @@ def print_baking(baking):
     s += "</div>"
     return s
     
-def print_recipe(recipe):
-    s = ""
-    s += "<div class=\"recipe\">"
-    if 'name' in recipe:
-        s += "<div class=\"title\">"
-        s += recipe['name']
-        s += "</div>"
-
-    s += "<div class=\"timestamp\">"
-    s += recipe['date']
-    s += "</div>"
-
-    s += "<img src=\"img/water.png\"></img>"
-    s += "<br />"
-    s += "woda " 
-    s += recipe['ingredients']['woda']
-    s += "<br />"
-
-    s += "<img src=\"img/sourdough.png\"></img>"
-    s += "<br />"
-    s += "zakwas " 
-    s += recipe['ingredients']['zakwas']
-    s += "<br />"
-
-    if 'maka_zytnia' in recipe['ingredients']:
-        s += "<img src=\"img/flour_whole_wheat.png\"></img>"
-        s += "<br />"
-        s += u'mąka żytnia '
-        s += recipe['ingredients']['maka_zytnia']
-        s += "<br />"
-
-    s += "<img src=\"img/flour_plain.png\"></img>"
-    s += "<br />"
-    s += u"mąka pszenna " 
-    s += recipe['ingredients']['maka_pszenna']
-    s += "<br />"
-
-    s += "<br />"
-    s += "</div>"
-    return s
-
 def print_recipes():
     with codecs.open('json/data.json', 'r', 'utf-8') as f:
         d = json.load(f)
@@ -170,9 +131,6 @@ def print_bakings():
     with codecs.open('json/data.json', 'r', 'utf-8') as f:
         d = json.load(f)
         s = ""
-        s += "<h1>"
-        s += "        Chleb "
-        s += "    </h1>"
         for baking in d['bakings']:
             s += print_baking(baking)
         return s
