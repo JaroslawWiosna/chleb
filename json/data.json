@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "name": "Iteracja #1",
+      "name": "Pszenno-żytni",
       "date": "2019-05-18 16:00",
       "ingredients": 
         {
@@ -24,7 +24,23 @@
           "sol": "12 g",
           "maka_pszenna": "275 g",
           "maka_zytnia": "275 g",
-          "zakwas": "100 g"
+          "zakwas": "100 g",
+	  "mieszanka chlebowa": "10g"
+        }      
+    },
+    {
+      "id": 3,
+      "name": "Pszenno-żytni z żurawiną",
+      "date": "2019-05-18 16:00",
+      "ingredients": 
+        {
+          "woda": "400 g",
+          "sol": "12 g",
+          "maka_pszenna": "275 g",
+          "maka_zytnia": "275 g",
+          "zakwas": "100 g",
+	  "mieszanka chlebowa": "10 g",
+	    "żurawina" : "50 g"
         }
       
     }
@@ -38,6 +54,7 @@
     {
       "date": "2019-05-17 18:00",
       "tasty" : "yes",
+      "recipe_id" : 2,
       "logs": {
         "2019-05-18 17:04" : "Zakwas wyjety z lodowki",
         "2019-05-18 19:04" : "Dokarmienie",
@@ -55,7 +72,8 @@
     },
     {
       "date": "2019-12-21 13:04",
-      "tasty" : "yes",
+      "tasty" : "?",
+      "recipe_id" : 3,
       "logs": {
         "2019-12-21 13:04" : "Zakwas wyjety z lodówki",
         "2019-12-21 14:02" : "Zakwas dokarmiony",

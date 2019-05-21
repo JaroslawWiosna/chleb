@@ -57,6 +57,14 @@ def print_recipe_as_table(recipe):
     s += recipe['ingredients']['maka_pszenna']
     s += "<br />"
     s += "</div>"
+    if u'żurawina' in recipe['ingredients']:
+        s += "<div class=\"ingredients_table_cell\">"
+        s += "<img src=\"img/TBS.png\" height=\"50\" width=\"50\"></img>"
+        s += "<br />"
+        s += u'żurawina '
+        s += recipe['ingredients'][u'żurawina']
+        s += "<br />"
+        s += "</div>"
 
 
     s += "</div>"
