@@ -23,7 +23,7 @@ def print_recipe_as_table(recipe):
 
     s += "<div class=\"ingredients_table\">"
     s += "<div class=\"ingredients_table_cell\">"
-    s += "<img src=\"img/water.png\" height=\"50\" weight=\"50\"></img>"
+    s += "<img src=\"img/water.png\" height=\"50\" width=\"50\"></img>"
     s += "<br />"
     s += "woda " 
     s += recipe['ingredients']['woda']
@@ -31,7 +31,7 @@ def print_recipe_as_table(recipe):
     s += "</div>"
 
     s += "<div class=\"ingredients_table_cell\">"
-    s += "<img src=\"img/sourdough.png\" height=\"50\" weight=\"50\"></img>"
+    s += "<img src=\"img/sourdough.png\" height=\"50\" width=\"50\"></img>"
     s += "<br />"
     s += "zakwas " 
     s += recipe['ingredients']['zakwas']
@@ -43,7 +43,7 @@ def print_recipe_as_table(recipe):
 
     if 'maka_zytnia' in recipe['ingredients']:
         s += "<div class=\"ingredients_table_cell\">"
-        s += "<img src=\"img/flour_whole_wheat.png\" height=\"50\" weight=\"50\"></img>"
+        s += "<img src=\"img/flour_whole_wheat.png\" height=\"50\" width=\"50\"></img>"
         s += "<br />"
         s += u'mąka żytnia '
         s += recipe['ingredients']['maka_zytnia']
@@ -51,7 +51,7 @@ def print_recipe_as_table(recipe):
         s += "</div>"
 
     s += "<div class=\"ingredients_table_cell\">"
-    s += "<img src=\"img/flour_plain.png\" height=\"50\" weight=\"50\"></img>"
+    s += "<img src=\"img/flour_plain.png\" height=\"50\" width=\"50\"></img>"
     s += "<br />"
     s += u"mąka pszenna " 
     s += recipe['ingredients']['maka_pszenna']
